@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <title>My favorite recipes</title>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+<script>
+
+</script>
+
+  
+  </head>
+  <body>
+    <header>
+      <div class="logo_container"><img src="img/logo.png"></div>
+      <div class="hamburger_container mobile">
+        <div class="mobile hamburger_btn">
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+        </div>
+    </div>
+      <nav class="menu">
+        <ul class="topnav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="favorites.html">My favorites</a></li>
+          <li><a href="create_recipe.html">Post a recipe</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a id="mobile_login" class="mobile">Login</a></li>
+          <li><a id="mobile_register" class="mobile">Home</a></li>
+        </ul>
+      </nav>
+      <div class="login_register not_mobile">
+          <p id="login_register_area"><span id="login_bnt">Login</span> | <span id="register_btn">Register</span></p>
+          <a id="user_top_corner" href="my_profile.html">
+            <img id="small_profile_pic" src="img/profile-user.png"><p id="small_userName"></p>
+          </a>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <h1>Create a new recipe</h1>
+          <div class="recipe-creating">
+            <div id="select_image" class="recipe-image"></div>
+            <button id="uploadPhoto" type="button">Upload photo</button>
+            <form>
+              <label for="rname">Recipe name:</label><br>
+              <input type="text" id="rname" name="rname"><br>
+              
+              <label >Ingridients:</label><br>
+              <div class="ingridient_container">
+              <button type="button" id="addIngridient">+</button>
+              <input type="text" class="ingridient"><br>
+             </div>
+              
+              <label for="difficulty">Difficulty:</label><br>
+              <input list="difficulties" name="difficulty" id="difficulty" placeholder="Select a difficulty"><br>
+              <datalist id="difficulties">
+                <option value="Easy">
+                <option value="Medium">
+                <option value="Hard">
+              </datalist>
+              
+              <label >Time to cook this recipe:</label><br>
+              <label for="hours">Hours:</label>
+              <input type="number" id="hours" name="hours">
+              <label for="minutes">Minutes:</label>
+              <input type="number" id="minutes" name="minutes"><br>
+              
+              <label for="how">How to do:</label><br>
+              <textarea id="how" name="how" rows="4" cols="50"></textarea>
+              <input id='create_recipe_btn' type="button" value="Submit"></input>
+            </form>
+          </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/indexeddb.js"></script>
+    <script src="js/firebase_config.js"></script>
+    <script src="js/login_register.js"></script>
+    <script src="js/responsive_interactions.js"></script>
+    <script src="js/addrecipe.js"></script>
+  </body>
+</html>

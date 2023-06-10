@@ -1,0 +1,502 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    margin: 0px;
+    width: 100%;
+    height: 125px;
+    background-color: white;
+}   
+
+main{
+    margin: 0 250px;
+}
+
+.logo_container{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+
+.logo_container > img{
+    display: block;
+    padding: 10px 0;
+    height: calc(100% - 20px);
+    margin: auto;
+}
+
+.menu{
+    display: block;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    height: 100%;
+  }
+  
+  ul.topnav li {float: right;}
+  
+  ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+
+
+.login_register{
+    float: left;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+}
+
+/* Search bar */
+
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid gray;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: black;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid gray;
+    background: gray;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .search-wrap{
+    
+  }
+
+  /* Recipes Container Home */
+
+  .recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .recipe-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 28%;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .image-recipe{
+      width: 100%;
+      height: 300px;
+      background-image: url(../img/risoto.jpg);
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size:cover;
+  }
+
+  .recipe-page{
+    height: 450px;
+  }
+
+ .description{
+    width: 100%;
+ }
+
+.recipe-image{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/img_add.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+ 
+.recipe-info{
+    float: left;
+    width: 75%;
+}
+
+.recipe-details{
+    margin-top: 1em;
+    float: right;
+    width: 25%;
+}
+
+.recipe-details > div{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.detail_text{
+    font-size: 0.3em;
+    text-align: center;
+}
+
+.recipe_name{
+    font-size: .8em;
+}
+.recipe_author{
+    font-size: 0.6em;
+}
+
+.detail_image{
+    width: calc(100% - 20px);
+    padding: 0 10px;
+}
+
+/* Recipe Container Favorites */
+
+.recipe-container-favorite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .recipe-container-favorite > div {
+    background-color: #f1f1f1;
+    margin: 30px;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .image-recipe-favorite{
+      width: 35%;
+      height: 300px;
+      background-image: url(../img/risoto.jpg);
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size:cover;
+      float: left;
+  }
+
+.description-favorite{
+    width: 60%;
+    float: left;
+    
+}
+
+.delete-favorite{
+    width: 5%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/delete.png);
+    background-position: center;
+    background-size: contain;
+    background-color: teal;
+    float: left;
+    cursor: pointer;
+}
+
+.recipe-image-favorite{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/img_add.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+ 
+.recipe-info-favorite{
+    float: left;
+    width: 65%;
+    padding-left: 15px;
+}
+
+.recipe-details-favorite{
+    margin-top: 1em;
+    float: left;
+    width: calc(35% - 60px);
+}
+
+.recipe-details-favorite > div{
+    float: left;
+    width: calc(50% - 30px);
+    position: relative;
+    margin: 0 15px;
+}
+
+.detail_text-favorite{
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.recipe_name-favorite{
+    font-size: .8em;
+}
+.recipe_author-favorite{
+    font-size: 0.6em;
+}
+
+.detail_image-favorite{
+    width: 100%;
+}
+
+/* Recipe Page */
+
+.recipe-info-container{
+    width: 100%;
+}
+
+.ingridients{
+    float: left;
+    width: 70%;
+}
+.recipe-details-single{
+    float: left;
+    width: 30%;
+}
+
+.recipe-detail-single{
+    float: left;
+    width: 50%;
+}
+
+.detail_image-single{
+    width: calc(100% - 100px);
+    padding: 0 50px;
+    padding-top: 30px;
+}
+
+.detail_text-single{
+    text-align: center;
+    font-size: 21px;
+}
+
+.howtodo_container{
+    float: left;
+    position: relative;
+    width: 100%
+}
+
+/* Recipes Container Profile */
+
+.profile-container{
+    float: left;
+    width: 100%;
+    margin-left: 15%;
+}
+
+.profile-image-cont{
+    float: left;
+    width: 35%;
+}
+.profile-details{
+    float: left;
+    width: 65%;
+}
+
+.profile-image{
+    float: left;
+    width: 300px;
+    border-radius: 200px;
+    background-color: gray;
+    height: 300px;
+}
+
+.recipe-container-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .image-recipe-profile{
+      width: 100%;
+      height: 300px;
+      background-image: url(../img/risoto.jpg);
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size:cover;
+  }
+
+  .recipe-container-profile > div {
+    background-color: #f1f1f1;
+    margin: 30px;
+    width: calc(33.33% - 60px);
+    font-size: 30px;
+  }
+}
+
+
+/* Recipes Creation */
+
+.recipe-creating{
+    width: 100%;
+}  
+
+textarea{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#hours,#minutes{
+    width: 3rem;
+}
+
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  /* Login and Register */
+
+#register_btn,#login_bnt{
+    cursor: pointer;
+}
+
+#shadowBG{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 998;
+
+}
+
+#login_box{
+    display: none;
+    position: fixed;
+    width: 650px;
+    top:calc(50vh - 350px);
+    left:calc(50vw - 325px);
+    background-color: white;
+    z-index: 999;
+}
+
+/* Forms */
+
+#login_form,#register_form{
+    padding: 45px 60px;
+    display: none;
+}
+
+input[type=text],[type=password],#difficulty {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #addIngridient,#removeIngridient{
+      font-size: 22px;
+    cursor: pointer;
+    margin: 12px 2px;
+    float: left;
+    display: block;
+    border-width: 0px;
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    background-color: #a3b9ff;
+    border-radius: 100%;
+    color: white;
+  }
+  #hours,#minutes{
+    width: 75px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .ingridient_container{
+      width: 100%;
+      display: inline-block;
+  }
+
+  .ingridient{
+    float: left;
+    width: calc(100% - 35px) !important;
+  }
+  #how{
+    height: 300px;
+  }
+
+  #small_profile_pic{
+    float: left;
+    width: 40px;
+    margin-top: 9px;
+    display: none;
+  }
+
+  #user_top_corner{
+      display: none;
+  }
+
+  #small_userName{
+    float: left;
+    padding-left: 10px;
+    display: none;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .mobile,#mobile_login,#mobile_register,#mobile_profile{
+      display: none;
+  }
+
+  #logOffbtn{
+      color: blue;
+      cursor: pointer;
+  }
+  #fav_btn{
+      text-align: left;
+      cursor: pointer;
+  }

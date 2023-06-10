@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <title>My favorite recipes</title>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+  </head>
+  <body>
+    <div id="shadowBG">
+    </div>
+    <div id="login_box">
+      <form id="login_form" action="">
+        <h2>Login</h2>
+        <label for="login_email">Email</label>
+        <input type="text" id="login_email" name="login" placeholder="Your name...">
+    
+        <label for="login_password">Password</label>
+        <input type="password" id="login_password" name="password" placeholder="Your last name...">
+      
+        <input type="button" value="Submit">
+        <input type="button" id="loginGoogle" value="Login with Google">
+      </form>
+      <form id="register_form" action="">
+        <h2>Create your account</h2>
+
+        <label for="newUser_name">Name</label>
+        <input type="text" id="newUser_name" name="userName" placeholder="Your name...">
+
+        <label for="newUser_email">Email</label>
+        <input type="text" id="login_email" name="firstname" placeholder="Your email...">
+    
+        <label for="newUser_password">Password</label>
+        <input type="password" id="login_password" name="lastname" placeholder="Password">
+      
+        <input type="button" value="Create Account">
+      </form>
+    </div>
+    <header>
+      <div class="logo_container"><img src="img/logo.png"></div>
+      <div class="hamburger_container mobile">
+        <div class="mobile hamburger_btn">
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+        </div>
+    </div>
+      <nav class="menu">
+        <ul class="topnav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="favorites.html">My favorites</a></li>
+          <li><a href="create_recipe.html">Post a recipe</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a id="mobile_login" class="mobile">Login</a></li>
+          <li><a id="mobile_register" class="mobile">Home</a></li>
+        </ul>
+      </nav>
+      <div class="login_register not_mobile">
+          <p id="login_register_area"><span id="login_bnt">Login</span> | <span id="register_btn">Register</span></p>
+          <a id="user_top_corner" href="my_profile.html">
+            <img id="small_profile_pic" src="img/profile-user.png"><p id="small_userName"></p>
+          </a>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <i id="fav_btn">Add as favorite</i>
+        <h1 style="text-align: center;"></h1>
+        <div id="recipe_image" class="image-recipe recipe-page"></div>
+          <div class="recipe-info-container">
+            <div class="ingridients">
+              <h2>Ingridients</h2>
+              <ul id="ingridients_list">
+              </ul>
+            </div>
+            <div class="recipe-details-single">
+              <div class="recipe-detail-single">
+                <img class="detail_image-single" src="img/difficulty.png"/>
+                <p id="diff" class="detail_text-single">Easy</p>
+              </div>
+              <div class="recipe-detail-single">
+                <img class="detail_image-single" src="img/time.png" />
+                <p id="timePrep" class="detail_text-single">30 min</p>
+              </div> 
+            </div>
+          </div>
+          <div class="howtodo_container">
+            <h2>How to do</h2>
+            <p id="howtodo_text">
+            </p>
+          </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/indexeddb.js"></script>
+    <script src="js/firebase_config.js"></script>
+    <script src="js/login_register.js"></script>
+    <script src="js/responsive_interactions.js"></script>
+    <script src="js/recipe.js"></script>
+    
+  </body>
+</html>

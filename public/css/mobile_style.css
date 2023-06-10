@@ -1,0 +1,122 @@
+/* Mobile and tablets */
+@media only screen and (max-width: 600px){
+
+    .mobile,#mobile_login,#mobile_register{
+        display: block;
+    }
+
+    .not_mobile{
+        display: none;
+    }
+
+    header{
+        height: auto;
+    }
+
+    #login_box{
+        width:100vw;
+        height: 100vh;
+        top:0;
+        left:0;
+    }
+
+    main{
+        width: 100%;
+        float: left;
+    }
+
+    .hamburger_btn{
+        margin-top: 26px;
+        margin-right: 26px;
+        float: right;
+        position: relative;
+        width: 50px;
+        height: 40px;
+    }
+
+    .logo_container{
+        float: left;
+        width: 40%;
+    }
+
+    .menu{
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    .logo_container > img {
+        display: block;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .menubar{
+        float: right;
+        margin: auto;
+        margin-top: 8px;
+        width: 40px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: royalblue;
+    }
+    .hamburger_container{
+        float: left;
+        width: 60%;
+    }
+
+    .recipe-container > div {
+        width: 80%; 
+    }
+    .recipe-details-single,.ingridients{
+        width: 100%;
+    }
+
+    .image-recipe-favorite{
+        width: 40%;
+        height: 170px;
+    }
+    .recipe-info-favorite{
+        width: 100%;
+    }
+
+    .recipe-details-favorite{
+        margin-top:0;
+        width: 100%;
+    }
+
+    .recipe-container-favorite > div{
+        width: 100%;
+        margin: 0;
+    }
+    #mobile_profile{
+        display: block;
+    }
+    .delete-favorite{display: none;}
+
+    .profile-container{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .profile-image-cont{
+        float: left;
+        width: 100%;
+    }
+
+    .profile-image{
+        width: 100%;
+        height: 95vw;
+    }
+    .profile-details{
+        width: 100%;
+        text-align: center;
+    }
+
+}
